@@ -4,10 +4,17 @@ let p1Button = document.querySelector("#btn-joueur1");
 let p2Button = document.getElementById("btn-joueur2");
 let scoreJoueur1 = document.querySelector("#scoreJoueur1");
 let scoreJoueur2 = document.querySelector("#scoreJoueur2");
+let playingTo = document.getElementById("playingTo");
+let scoreMax = document.querySelector("#score-max");
+
 let p1Score = 0;
 let p2Score = 0;
 let gameOver = false;
-let winningScore = 5;
+let winningScore = Number(scoreMax.value);
+
+function updatePlayingTo() {
+    playingTo.textContent = `Playing to ${winningScore}`;
+}
 
 function resetGame() {
     gameOver = false;
@@ -15,7 +22,9 @@ function resetGame() {
     p2Score = 0;
     scoreJoueur1.textContent = 0;
     scoreJoueur2.textContent = 0;
+    updatePlayingTo();
 }
+
 p1Button.addEventListener("click", function () {
     if (!gameOver){
     p1Score++;
@@ -46,3 +55,5 @@ scoreMaxInput.addEventListener("change", function () {
     winningScore = Number(this.value);
     resetGame();
 });
+
+updatePlayingTo();
