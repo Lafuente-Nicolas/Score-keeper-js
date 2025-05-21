@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+header {
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 3rem;
+      color: $led-yellow;
+      text-shadow: 0 0 10px $led-yellow;
+    }
+  }
