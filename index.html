@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compteur de Score</title>
+</head>
+<body>
+
+  <header>
+    <h1>Compteur de Score</h1>
+  </header>
+
+  <main>
+
+    <section aria-label="Paramètres">
+      <form>
+        <label for="score-max">Score à atteindre :</label>
+        <input type="number" id="score-max" name="score-max" min="1" value="5">
+      </form>
+    </section>
+
+    <section aria-label="Scores">
+      <p>
+        <output id="score-joueur1" for="btn-joueur1">0</output> - 
+        <output id="score-joueur2" for="btn-joueur2">0</output>
+      </p>
+    </section>
+
+    <section aria-label="Commandes">
+      <button id="btn-joueur1"> Joueur 1</button>
+      <button id="btn-joueur2"> Joueur 2</button>
+      <button id="btn-reset">Réinitialiser</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Nicolas</p>
+  </footer>
+
+</body>
+</html>
