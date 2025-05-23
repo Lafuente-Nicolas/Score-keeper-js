@@ -1,0 +1,80 @@
+@use "../abstracts/variables" as *;
+
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  }
+  
+  section[aria-label="Scores"] {
+    font-size: 4rem;
+    margin: 2rem 0;
+    output {
+      display: inline-block;
+      min-width: 100px;
+      padding: 1rem;
+      background-color: #000;
+      border: 2px solid $accent-color;
+      border-radius: 10px;
+      margin: 0 1rem;
+      box-shadow: 0 0 10px $accent-color;
+      color: $accent-color;
+    }
+  }
+  
+  #playingTo {
+    font-size: 1.2rem;
+    color: $led-yellow;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px $led-yellow;
+  }
+  
+  section[aria-label="Paramètres"] {
+    form {
+      margin-bottom: 1rem;
+      label {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+      }
+      input[type="number"] {
+        width: 80px;
+        padding: 0.3rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+      }
+    }
+  }
+  
+  section[aria-label="Commandes"] {
+    margin-top: 1rem;
+    button {
+      background-color: $button-bg;
+      color: $text-color;
+      border: 2px solid $accent-color;
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: $button-hover;
+        transform: scale(1.05);
+      }
+    }
+  }
+  
