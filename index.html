@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Score Keeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Score Keeper</h1>
+  </header>
+
+  <main>
+
+    <section aria-label="Paramètres">
+      <form>
+        <label for="score-max">Score à atteindre :</label>
+        <input type="number" id="score-max" name="score-max" min="1" value="5">
+      </form>
+    </section>
+
+    <section aria-label="Scores">
+      <p>
+        <output id="scoreJoueur1" for="btn-joueur1">0</output> - 
+        <output id="scoreJoueur2" for="btn-joueur2">0</output>
+      </p>
+    </section>
+
+    <p id="playingTo">Playing to 5</p>
+
+
+    <section aria-label="Commandes">
+      <button id="btn-joueur1"> Joueur 1</button>
+      <button id="btn-joueur2"> Joueur 2</button>
+      <button id="btn-reset">Réinitialiser</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Nicolas</p>
+  </footer>
+<script src="./script.js"></script>
+</body>
+</html>
